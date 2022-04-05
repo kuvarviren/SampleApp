@@ -25,7 +25,7 @@ namespace API.Controllers
         }
 
         [HttpGet("greet")]
-        public ActionResult GetModifiedName(string name)
+        public ActionResult<string> GetModifiedName(string name)
         {
             if(string.IsNullOrEmpty(name))
             {
